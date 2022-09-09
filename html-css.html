@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   
+    <title>Blog | Eq Hong</title>
+
+  </head>
+   
+
+  <header>
+      <a href="index.html">HOME</a> &nbsp;
+      <a href="blog.html">BLOG</a> &nbsp;
+  </header>
+    
+  <body>
+
+    <h2>HTML CSS</h2>
+
+  <div class="blogpost">
+    
+    <h3>What are the differences between relative, absolute, and fixed positioning?</h3>
+
+    <p >
+      <span class="bold">Relative positioning</span> 
+      <ul>
+      <li>Is like the static positioning value, but left/right/top/bottom will work. </li>
+      <li>So using relative positioning unlocks CSS layout properties. </li>
+      <li>When using relative, left/right/top/bottom will nudge the element from its original position. </li>
+      </ul>
+      <p id="example-relative">Example for relative, this text is positioned 50px to the right.</p>
+      <pre>
+        CSS
+        <code>
+          #example-relative {
+            position: relative;
+            right: 50px;
+          }</code>
+      </pre>
+    </p>
+    <p>
+      <span class="bold">Absolute positioning</span> 
+      <ul>
+      <li>Will take an element out of the normal flow of the webpage. </li>
+      <li>So other elements will ignore it / behave as if it's not there. </li>
+      <li>Allows you to place any page element exactly where you want it. </li>
+      </ul>
+      <p id="example-absolute">Example for absolute!</p>
+      <pre>
+        CSS
+        <code>
+          #example-absolute {
+            position: absolute;
+            left: 0;
+          }</code>
+      </pre>
+    </p>
+    <p>
+      <span class="bold">Fixed positioning</span> 
+      <ul>
+      <li>Will also take an element out of the normal flow of the webpage. </li>
+      <li>Fixed positioning will always be relative to the viewport.</li>
+      <li>Can be used to create a "floating" element that stays in the same position regardless of scrolling. </li>
+      </ul>
+      <p id="example-fixed">Example for fixed!</p>
+      <pre>
+        CSS
+        <code>
+          #example-fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+          }</code>
+      </pre>
+    </p>
+    
+
+    <p>
+      <span class="bold">References</span> <br>
+      <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/#:~:text=This%20is%20a%20very%20powerful,right%20to%20set%20the%20location.">css-tricks.com | Absolute, Relative, Fixed Positioning: How Do They Differ?</a>
+      <br>
+      <a href="https://css-tricks.com/almanac/properties/p/position/">css-tricks.com | position</a>
+      <br>
+      <a href="https://levelup.gitconnected.com/css-position-property-relative-absolute-static-fixed-sticky-79a40275ed04">levelup.gitconnected.com | CSS position property: relative, absolute, static, fixed, sticky </a>
+      <br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">developer.mozilla.org | position - CSS: Cascading Style Sheets</a>
+    </p>
+
+  </div>
+  </body>
+
+  
+  <footer>
+    <hr>
+    <a class="footerlink" href="index.html">HOME</a> &nbsp;
+    <a class="footerlink" href="blog.html">BLOG</a> &nbsp;
+  </footer>
+</html>
