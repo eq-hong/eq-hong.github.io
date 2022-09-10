@@ -184,6 +184,10 @@ img {
 
 }
 
+.center {
+
+}
+
 /* Flame page */
 .flame {
   background-color: black;
@@ -193,6 +197,26 @@ img {
 .inheritwidth {
   width: 100%;
   height: auto;
+}
+
+.material-symbols-outlined {
+  height: 0.1px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.align-right {
+  text-align: right;
+}
+
+.absolute-fire-footer {
+position: absolute;
+/* width: 92%; */
+bottom: 50px;
 }
 
 /* positioning examples */
@@ -212,6 +236,8 @@ img {
   right: 0;
 
 }
+
+
 
 /* Media queries*/
 @media (max-width: 1200px) {
