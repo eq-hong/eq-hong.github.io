@@ -86,6 +86,21 @@ p {
 
 }
 
+blockquote {
+  background-color: #eee;
+  border: 1px solid rgb(230, 230, 230);
+  display: block;
+  max-width: 100%;
+  padding: 2.5%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1%;
+  padding: 5%;
+}
+
+.reference {
+  color: rgb(150, 150, 150);
+}
 
 pre {
   background-color: #eee;
