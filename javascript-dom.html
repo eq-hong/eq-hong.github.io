@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   
+    <title>Blog | Eq Hong</title>
+
+  </head>
+   
+
+  <header>
+      <a href="index.html">HOME</a> &nbsp;
+      <a href="blog.html">BLOG</a> &nbsp;
+  </header>
+  
+
+  <body>
+  <h2>JavaScript fundamentals</h2> 
+
+  <div class="blogpost">
+    <h3>An analogy to describe JavaScript and its relationship to HTML and CSS.</h3>
+    <p>
+     An analogy could be a building: HTML is the structure or layout of the building. CSS is the design of the building. And JavaScript is the functionality of the building.
+      <p>
+     A house...
+        <ul>
+          <li>HTML: The house has a roof, walls and 3 rooms.</li>
+          <li>CSS: The house has a black tiled roof, brick on the outside with a modern interior.</li>
+          <li>JavaScript: Gives you services needed for a kitchen, bedroom and living room. So you can cook, rest comfortably, and entertain in the house.</li>
+        </ul>
+      </p>
+
+      <p>Maybe an anaolgy that's more fun could be a dragon? Haha:</p>
+      <ul>
+        <li>HTML: The structure of a dragon could be a head, a body, and a tail.</li>
+        <li>CSS: The dragon's appearance will reptilian, have four legs and a pair of webbed wings. It'll also be red, have a long tail and spikes.</li>
+        <li>JavaScript: The dragon can fly and breathe fire.</li>
+      </ul>
+    </p>
+    <p>
+      <span class="bold">References</span> <br>
+      <a href="https://www.freecodecamp.org/news/the-relationship-between-html-css-and-javascript-explained-by-building-a-city-a73a69c6343/" target="_blank">freecodecamp.org | The relationship between HTML, CSS and JavaScript explained by building a city</a>
+    </p>
+    
+    <h3>Explain control flow and loops using an example process from everyday life.</h3>
+    <p>
+      Control flow is the order which the computer executes statements.
+    </p>
+    <p>
+      Code is run in order from the first line in the file to the last line, unless the computer runs across structures that change the control flow, such as conditionals, loops and functions.
+    </p>
+
+    <p>
+      <blockquote><p>An example from everyday life...Getting to the office downtown via public transport.</p>
+
+        <ol>
+          <li>Lock up and leave home.</li>
+          <li>Walk to the bus stop.</li>
+          <li><code>[conditional]</code> Check if the bus to downtown is running. 
+            <br>If bus is running, wait and board the downtown bus to work. 
+            <br>If bus is cancelled, wait and board an alternative bus to the local train station. Once at the train station, take the downtown train.</li>
+          <li>When on the bus or train, put on headphones and listen to music.</li>
+          <li><code>[loop]</code> The morning commute playlist is pretty small. Repeat music playlist until we get off the bus or train at downtown.</li>
+          <li>Walk to the office, open the door and get ready to work.</li>
+        </ol>  
+        Steps 1-6 would be a <code>[function]</code> and it gets repeated every morning if it's a weekday. <br> We would have a different <code>[function]</code> if it's the weekend.
+      </blockquote>
+    </p>
+    <p>
+      <span class="bold">References</span> <br>
+      <a href="https://medium.com/@rianna.cleary/control-flow-in-javascript-9c63d0c98bb9#:~:text=Control%20flow%20in%20JavaScript%20is,loops%2C%20conditionals%2C%20or%20functions." target="_blank">medium.com | Control Flow in JavaScript</a>
+      <br>
+      <a href="https://developer.mozilla.org/en-US/docs/Glossary/Control_flow" target="_blank">mozilla.org | Control Flow</a>
+    </p>
+
+    <h3>Describe what the DOM is and an example of how you might interact with it.</h3>
+    <p>
+      The DOM is an interface that allows you to link HTML and CSS with Javascript. 
+      <ul>
+        <li>It does this by representing the web document (eg. HTML and CSS) into a hierarchical structure like a tree.</li>
+        <li>This tree structure has branches made of nodes, these nodes represent parts of the HTML and CSS.</li>
+        <li>This hierarchical tree structure represented by the DOM allows JavaScript (or another language) to access each of these nodes as independent, selectable objects.</li>
+      </ul>  
+
+      For example, the DOM allows you to use the following in JavaScript to select HTML which has a CSS Id named cats:
+
+      <pre>JavaScript<code>
+
+        document.getElementById('cats')
+         </code></pre>
+ 
+    </p>
+    <p>
+      <span class="bold">References</span> <br>
+      <a href="https://www.ionos.com/digitalguide/websites/web-development/an-introduction-to-the-document-object-model-dom/" target="_blank">ionos.com | Document Object Model (DOM): definition, structure and example</a>
+    </p>
+
+    <h3>Explain the difference between accessing data from arrays and objects.</h3>
+    <p>
+      An array is a list of ordered data. An object represents “things” with characteristics.
+    </p>
+
+<span class="bold">Arrays</span>
+
+      <ul>
+        <li>An array is a list of ordered data.</li>
+        <li>An array can consist of strings, numbers, booleans, objects, or even other arrays.</li>
+        <li>Because an array is ordered, you access each item by its numerical position in the list.</li>
+        <li>It is important to note arrays use zero-based indexing: so the first item in an array has an index of 0, the second item an index of 1, and so on.</li>
+        <li>The numerical position in an array is accessed by using square brackets <code>[]</code>.</li>
+      </ul>
+
+      <pre>JavaScript<code>
+
+       <span class="grey-text"> // Basic array syntax</span>
+        
+       let array = ['0', '1', '2', '3'];
+        </code></pre>
+
+      <pre>JavaScript<code>
+
+       <span class="grey-text">// Example 'dessert list' array</span>
+
+       let dessertList = ['Creme Brulee', 'Panna Cotta', 'Chocolate Mud Cake', 'Banoffee'];
+      </code></pre>
+  
+       <span class="bold">Objects</span>
+
+      <ul>
+        <li>An object represents “things” with characteristics.</li>
+        <li>In an object these characteristics are called properties which consist of a <code>key</code> and a <code>value.</code> </li>
+        <li>Which means an object can be anything that is made up and be defined by a set of characteristics. </li>
+        <li>As a basic example it can be used to describe an animal, a book, or a tree. </li>
+        <li>Properties in objects can be accessed by using either dot <code>.</code> or square brackets <code>[]</code>.</li>
+      </ul>
+      
+      <pre>JavaScript<code>
+
+       <span class="grey-text">// Basic object syntax</span>
+
+       let object = {
+       key: 'value'
+       };
+      </code></pre>
+
+      <pre>JavaScript<code>
+
+       <span class="grey-text">// Example 'animal' object</span>
+
+       let animal = {
+       species: 'Tūī',
+       legs: 2,
+       vertebrate: true
+       };
+      </code></pre>
+
+      <p>
+        <span class="bold">References</span> <br>
+        <a href="https://medium.com/@zac_heisey/objects-vs-arrays-42601ff79421" target="_blank">medium.com | Objects vs. Arrays</a>
+        <br>
+      </p>
+    </p>
+
+    <h3>Explain what functions are and why they are helpful.</h3>
+    <p>
+      A JavaScript function is a block of code designed to perform a particular task.
+      <br><br>
+      When developing an application, you often need to perform the same action in many places. To avoid repeating the same code over again, a function can be used to wrap that code so it can be reused. So functions are helpful to structure code into smaller, reusable units.
+
+      <p>
+        <span class="bold">References</span> <br>
+        <a href="https://www.javascripttutorial.net/javascript-function/" target="_blank">javascripttutorial.net | JavaScript Functions</a>
+        <br>
+        <a href="https://www.w3schools.com/js/js_functions.asp" target="_blank">w3schools.com | JavaScript Functions</a>
+        <br>
+      </p>
+    </p>
+    
+   
+  </div>
+
+    
+</body>
+
+
+<footer>
+  <hr>
+  <a class="footerlink" href="index.html">HOME</a> &nbsp;
+  <a class="footerlink" href="blog.html">BLOG</a> &nbsp;
+</footer>
+
+</html>
