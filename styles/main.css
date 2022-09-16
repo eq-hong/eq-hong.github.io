@@ -98,7 +98,7 @@ blockquote {
   padding: 5%;
 }
 
-.reference {
+.grey-text {
   color: rgb(150, 150, 150);
 }
 
@@ -110,7 +110,12 @@ pre {
   max-width: 100%;
   padding: 2.5%;
   margin-top: 1%;
-  margin-bottom: 7%;
+  margin-bottom: 2.5%;
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word; 
 }
 
 code {
@@ -290,6 +295,9 @@ bottom: 50px;
     height: auto;
   }
   
+  pre {
+    padding: 7%;
+  }
 }
 
 
@@ -299,4 +307,5 @@ bottom: 50px;
     margin: 10%;
   }
   
+
 }
